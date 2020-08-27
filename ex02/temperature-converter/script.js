@@ -108,7 +108,7 @@ const startConvertion = () => {
 
 run.addEventListener('click', startConvertion);
 
-// Garante que os estados que guardam as unidades de
+// Garante que os estados que guardem as unidades de
 // temperatura estejam sempre atualizados
 inputOptions.addEventListener('change', ({ target }) => {
     currentInputUnit = target.value;
