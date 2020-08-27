@@ -101,11 +101,7 @@ const startConvertion = () => {
         return;
     }
 
-    const outputArray = temperatures.map((value) => {
-        if (value !== '') {
-            return validateInput(value, convertTo);
-        }
-    });
+    const outputArray = temperatures.map((value) => validateInput(value, convertTo));
 
     showOutput(temperatures, outputArray);
 }
