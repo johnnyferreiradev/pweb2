@@ -4,28 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Conversor de temperatura</title>
 </head>
 <body>
     <h1>Conversor de Tempo</h1>
 
-    <textarea id="input" cols="30" rows="10" placeholder="Use o espaço para separar os valores e ponto (.) para valores decimais. Ex: 10 2.5 0"></textarea>
-    <select id="inputOptions">
-        <option value="celsius">Celcius</option>
-        <option value="fahrenheit">Fahrenheit</option>
-        <option value="kelvin">Kelvin</option>
-    </select>
-    <h3>Converter para</h3>
-    <select id="outputOptions">
-        <option value="celsius">Celcius</option>
-        <option value="fahrenheit" selected>Fahrenheit</option>
-        <option value="kelvin">Kelvin</option>
-    </select>
-
-    <button type="button" id="run">Converter</button>
-
-    <div id="output">
-
+    <div class="container">
+        <div class="left-side">
+            <textarea id="input" cols="30" rows="10" placeholder="Use o espaço para separar os valores e ponto (.) para valores decimais. Ex: 10 2.5 0"></textarea>
+            <h3>Converter de</h3>
+            <select id="inputOptions">
+                <option value="celsius">Celcius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+            <h3>para</h3>
+            <select id="outputOptions">
+                <option value="celsius">Celcius</option>
+                <option value="fahrenheit" selected>Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        
+            <button type="button" id="run">Converter</button>
+        </div>
+        <div class="right-side">
+            <div id="output">
+        
+            </div>
+        </div>
+    
     </div>
 
     <script src="./script.js"></script>

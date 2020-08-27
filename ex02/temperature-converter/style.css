@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    background: #1D2935;
+    color: #fafafa;
+    font-family: Roboto;
+}
+
+body {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 32px 0px;
+}
+
+textarea,
+select {
+    background: #4F6F7F;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+textarea:focus,
+select:focus {
+    box-shadow: 0px 0px 2px 2px #42B983;
+}
+
+button {
+    border: none;
+    background: #42B983;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 24px;
+    font-weight: bold;
+    padding: 8px 16px;
+    text-align: center;
+    box-shadow: 1px 1px 4px 2px #19242F;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #52d89c;
+}
+
+::-webkit-input-placeholder {
+    color: #99bdb4;
+ }
+ 
+:-moz-placeholder { /* Firefox 18- */
+    color: #99bdb4;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #99bdb4;  
+}
+
+:-ms-input-placeholder {  
+    color: #99bdb4;  
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.left-side {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.left-side textarea,
+.left-side select,
+.left-side button,
+.left-side h3 {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+.left-side button {
+    margin-top: 16px;
+}
+
+.right-side {
+    width: 70%;
+    padding-left: 16px;
+}
+
+.right-side #output {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 400px;
+    background: #2C3E50;
+    border-radius: 4px;
+    padding: 32px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.response {
+    width: max-content;
+    height: max-content;
+    padding: 8px;
+    background: #42B983;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px 2px #1e4946;
+    font-size: 24px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 720px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-side,
+    .right-side {
+        width: 100%;
+        padding: 0;
+    }
+
+    .right-side {
+        margin-top: 32px;
+    }
+}

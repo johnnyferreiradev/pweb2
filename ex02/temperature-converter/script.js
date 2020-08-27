@@ -36,7 +36,7 @@ const validateInput = (value, callback) => {
     return 'valor incorreto';
 }
 
-const removeClearValues = (array) => array.filter((value) => value !== '');
+const removeEmptyValues = (array) => array.filter((value) => value !== '');
 
 const responseFactory = (inputArray, outputArray) => {
     return inputArray.map((item, index) => ({
@@ -92,7 +92,7 @@ const startConvertion = () => {
     const outputUnitOfMeasure = outputOptions.value;
 
     const cells = inputValue.split(' ');
-    const temperatures = removeClearValues(cells);
+    const temperatures = removeEmptyValues(cells);
 
     const convertTo = convert[`${inputUnitOfMeasure}to${outputUnitOfMeasure}`];
 
