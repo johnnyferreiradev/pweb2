@@ -35,6 +35,10 @@ select {
     padding: 8px;
 }
 
+textarea {
+    resize: vertical;
+}
+
 textarea:focus,
 select:focus {
     box-shadow: 0px 0px 2px 2px #42B983;
