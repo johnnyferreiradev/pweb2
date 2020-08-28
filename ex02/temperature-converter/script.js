@@ -57,7 +57,7 @@ const createResponseItem = (response) => {
 
         value1.innerText = `${response.input} `;
         unit1.innerText = `${units[currentInputUnit]} `;
-        value2.innerText = `= ${response.output} `;
+        value2.innerText = `= ${response.output.toFixed(2)} `;
         unit2.innerText = `${units[currentOutputUnit]}`;
 
         div.appendChild(value1);
