@@ -97,7 +97,7 @@ const startConvertion = () => {
     const convertTo = convert[`${inputUnitOfMeasure}to${outputUnitOfMeasure}`];
 
     if (!convertTo) {
-        showOutput(temperatures, temperatures);
+        showOutput(temperatures, temperatures.map((value) => !isNaN(value) ? value : 'valor incorreto'));
         return;
     }
 
