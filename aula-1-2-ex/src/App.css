@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
